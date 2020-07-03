@@ -35,7 +35,11 @@ body {
   padding: 1rem;
   border-radius: .5rem;
   transition: all .2s ease-in-out;
-  cursor: none;
+  cursor: pointer;
+}
+
+.key:hover {
+  transform: scale(1.02);
 }
 
 .top-piano-key {
@@ -56,7 +60,7 @@ body {
   border-width: 0 .2rem .4rem;
 }
 
-.top-piano-key .keyboard-key {
+.top-piano-key .key-name {
   position: relative;
   top: 17rem;
 }
@@ -81,17 +85,17 @@ body {
   box-shadow: inset 0 .05rem 0 #ffffff, inset 0 -.05rem 0 #ffffff, inset .05rem 0 0 #ffffff, inset -.05rem 0 0 #ffffff, inset -.1rem 0 1.5rem #222222, -.3rem 0 .6rem rgba(0, 0, 0, .5), 0 0 .3rem rgba(0,0,0,.7);
 }
 
-.bottom-piano-key .keyboard-key {
+.bottom-piano-key .key-name {
   position: relative;
   top: 38rem;
 }
 
-.keyboard-key__name {
+.keyboard-key-name {
   display: block;
   font-size: 3rem;
 }
 
-.piano-key__name {
+.piano-key-name {
   display: block;
   padding: .5rem;
   font-size: 2rem;

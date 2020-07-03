@@ -1,6 +1,13 @@
+const keys = document.querySelectorAll(".key");
+
+
 function playSound(event) {
-  const key = document.querySelector(`div[data-key="${event.keyCode}"]`);
-  const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+  const key = document.querySelector(`div[data-key="${event.keyCode ||
+    event.target.dataset.key ||
+    event.target.parentElement.parentElement.dataset.key}"]`);
+  const audio = document.querySelector(`audio[data-key="${event.keyCode ||
+    event.target.dataset.key ||
+    event.target.parentElement.parentElement.dataset.key}"]`);
 
   if (!audio) return;
 
@@ -14,9 +21,6 @@ function playSound(event) {
   audio.play();
 }
 
-window.addEventListener('keydown', playSound);
-
-
 
 function removeTransition() {
   if (this.classList.contains("bottom-piano-key")) {
@@ -26,6 +30,9 @@ function removeTransition() {
   }
 }
 
-const keys = document.querySelectorAll(".key");
+
+window.addEventListener('keydown', playSound);
+
+keys.forEach(key => key.addEventListener('click', playSound));
 
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
