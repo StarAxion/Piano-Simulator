@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Piano Simulator</title>
+</head>
+
+<body>
+  <main>
+    <section class="center">
+      <h1 class="title">Piano Simulator</h1>
+      <div class="keys">
+        <div data-key="90" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">Z</span>
+            <span class="piano-key__name">C4</span>
+          </div>
+        </div>
+        <div data-key="83" class="key top-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">S</span>
+            <span class="piano-key__name">C#4</span>
+          </div>
+        </div>
+        <div data-key="88" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">X</span>
+            <span class="piano-key__name">D4</span>
+          </div>
+        </div>
+        <div data-key="68" class="key top-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">D</span>
+            <span class="piano-key__name">D#4</span>
+          </div>
+        </div>
+        <div data-key="67" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">C</span>
+            <span class="piano-key__name">E4</span>
+          </div>
+        </div>
+        <div data-key="86" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">V</span>
+            <span class="piano-key__name">F4</span>
+          </div>
+        </div>
+        <div data-key="71" class="key top-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">G</span>
+            <span class="piano-key__name">F#4</span>
+          </div>
+        </div>
+        <div data-key="66" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">B</span>
+            <span class="piano-key__name">G4</span>
+          </div>
+        </div>
+        <div data-key="72" class="key top-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">H</span>
+            <span class="piano-key__name">G#4</span>
+          </div>
+        </div>
+        <div data-key="78" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">N</span>
+            <span class="piano-key__name">A5</span>
+          </div>
+        </div>
+        <div data-key="74" class="key top-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">J</span>
+            <span class="piano-key__name">A#5</span>
+          </div>
+        </div>
+        <div data-key="77" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">M</span>
+            <span class="piano-key__name">B5</span>
+          </div>
+        </div>
+        <div data-key="188" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">,</span>
+            <span class="piano-key__name">C5</span>
+          </div>
+        </div>
+        <div data-key="76" class="key top-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">L</span>
+            <span class="piano-key__name">C#5</span>
+          </div>
+        </div>
+        <div data-key="190" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">.</span>
+            <span class="piano-key__name">D5</span>
+          </div>
+        </div>
+        <div data-key="186" class="key top-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">;</span>
+            <span class="piano-key__name">D#5</span>
+          </div>
+        </div>
+        <div data-key="191" class="key bottom-piano-key">
+          <div class="keyboard-key">
+            <span class="keyboard-key__name">/</span>
+            <span class="piano-key__name">E5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio data-key="90" src="sounds/C4.wav"></audio>
+  <audio data-key="83" src="sounds/C-4.wav"></audio>
+  <audio data-key="88" src="sounds/D4.wav"></audio>
+  <audio data-key="68" src="sounds/D-4.wav"></audio>
+  <audio data-key="67" src="sounds/E4.wav"></audio>
+  <audio data-key="86" src="sounds/F4.wav"></audio>
+  <audio data-key="71" src="sounds/F-4.wav"></audio>
+  <audio data-key="66" src="sounds/G4.wav"></audio>
+  <audio data-key="72" src="sounds/G-4.wav"></audio>
+  <audio data-key="78" src="sounds/A5.wav"></audio>
+  <audio data-key="74" src="sounds/A-5.wav"></audio>
+  <audio data-key="77" src="sounds/B5.wav"></audio>
+  <audio data-key="188" src="sounds/C5.wav"></audio>
+  <audio data-key="76" src="sounds/C-5.wav"></audio>
+  <audio data-key="190" src="sounds/D5.wav"></audio>
+  <audio data-key="186" src="sounds/D-5.wav"></audio>
+  <audio data-key="191" src="sounds/E5.wav"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Chewy', cursive;
+  background-image: url(../img/body-bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.center {
+  padding: 5rem;
+	text-align: center;
+}
+
+.title {
+  margin-bottom: 10rem;
+  font-size: 6rem;
+  text-shadow: .2rem .2rem 0 #ffffff, -.2rem -.2rem 0 #ffffff, -.2rem .2rem 0 #ffffff, .2rem -.2rem 0 #ffffff;
+}
+
+.key {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: .5rem;
+  transition: all .2s ease-in-out;
+  cursor: none;
+}
+
+.top-piano-key {
+  height: 28rem;
+  width: 8rem;
+  margin: 0 0 0 -4rem;
+  color: #ffffff;
+  background: linear-gradient(-20deg, #111111, #000000, #222222);
+  box-shadow: inset 0 -.1rem .2rem rgb(122, 118, 118, .5), 0 .2rem .3rem rgba(0, 0, 0, .5);
+  border-color: #666666 #222222 #111111 #555555;
+  border-style: solid;
+  border-width: .2rem .4rem 1.2rem;
+  z-index: 1;
+}
+
+.top-piano-key_active {
+  background: linear-gradient(-20deg, #000000, #111111, #222222);
+  border-width: 0 .2rem .4rem;
+}
+
+.top-piano-key .keyboard-key {
+  position: relative;
+  top: 17rem;
+}
+
+.bottom-piano-key {
+  height: 48rem;
+  width: 10rem;
+  color: #000000;
+  background: linear-gradient(-30deg, #f8f8f8, #ffffff);
+  box-shadow: inset 0 .1rem 0 #ffffff, inset 0 -.1rem 0 #ffffff, inset .1rem 0 0 #ffffff, inset -.1rem 0 0 #ffffff, inset -.1rem -.1rem 1.5rem rgba(0, 0, 0, .5), -.3rem .4rem .6rem rgba(0, 0, 0, .5), 0 .4rem .3rem rgba(0,0,0,.7);
+}
+
+.key[data-key="88"], .key[data-key="67"], .key[data-key="66"], .key[data-key="78"], .key[data-key="77"], .key[data-key="190"], .key[data-key="191"] {
+  margin-left: -4rem;
+}
+
+.key[data-key="86"], .key[data-key="188"] {
+  margin-left: .3rem;
+}
+
+.bottom-piano-key_active {
+  box-shadow: inset 0 .05rem 0 #ffffff, inset 0 -.05rem 0 #ffffff, inset .05rem 0 0 #ffffff, inset -.05rem 0 0 #ffffff, inset -.1rem 0 1.5rem #222222, -.3rem 0 .6rem rgba(0, 0, 0, .5), 0 0 .3rem rgba(0,0,0,.7);
+}
+
+.bottom-piano-key .keyboard-key {
+  position: relative;
+  top: 38rem;
+}
+
+.keyboard-key__name {
+  display: block;
+  font-size: 3rem;
+}
+
+.piano-key__name {
+  display: block;
+  padding: .5rem;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  color: #ffc800;
+  text-shadow: .1rem .1rem .2rem #000000, -.1rem -.1rem .2rem #000000, -.1rem .1rem .2rem #000000, .1rem -.1rem .2rem #000000;
+}
